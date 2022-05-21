@@ -21,6 +21,8 @@ The following order of running the scripts so that the project can be repeated i
 
 ## Requirements
 
+Because the RAM constraints of the normal Google Colab most of the ipynb notebooks will be run in Google Colab Pro+ which offers up to 50GB of RAM. 
+
 The following packages requirements are only applicable to the codes that are run in python, not Google Colab. 
 
 python==3.8
