@@ -6,7 +6,7 @@
 The following packages requirements are only applicable to the codes that are run in python, not Google Colab. 
 
 python==3.8
-
+```bash
 aiohttp==3.8.1
 aiosignal==1.2.0
 anyascii==0.3.0
@@ -126,4 +126,4 @@ widgetsnbextension==3.6.0
 xxhash==2.0.2
 yarl==1.7.2
 zipp==3.8.0
-
+```
