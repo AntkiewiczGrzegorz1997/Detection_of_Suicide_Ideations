@@ -1,5 +1,23 @@
 # MasterthesisBERT
 
+The project is conducted in 2 environments: local machine and Google Colab Pro+. The following scripts are run in the local machine: main.py, scraping.py,
+data_loader.py, preprocess_data.py, SMHD_preprocess.py and finetune_mental_health.py 
+
+The following order of running the scripts so that the project can be repeated is as follows:
+
+1. Gather the data - run the scraping.py from the main.py for getting the data that will be used to train PsychBERTModel. The scraper saves the scraped content of each subreddit into a separate file. Big part of the Data is also obtained from Google Big Query and can be later as well preprocessed by the script. 
+2. Merge the Data - the main.py runs the data_loader.py script. We should run it twice: once for our scraped data and the second time for the data from Google Big Query. 
+3. Preprocess the files - from main.py run the preprocess_data.py file that preprocesses the text and outputs a .txt file. Because of the RAM constraints it has to be done probably few times, each time on a different part of the dataset resulting in the end in few preprocessed files. 
+
+4. With the help of Preprocess_Dataset_Right.ipynb preprocess .txt files into their final correct format that can be later used for pre-training BERT
+
+5. Run BERT_Pre-Training.ipynb twice: for PsychBERT1 and PsychBERT2 - in the code choose the right datasets for it 
+6. For BERT, PsychBERT1 and PsychBERT2 extract embeddings with  
+7. FirstClassification.ipynb
+
+8.
+9.
+10
 
 ## Requirements
 
