@@ -12,11 +12,11 @@ The following order of running the scripts so that the project can be repeated i
 4. With the help of Preprocess_Dataset_Right.ipynb preprocess .txt files into their final correct format that can be later used for pre-training BERT
 
 5. Run BERT_Pre-Training.ipynb twice: for PsychBERT1 and PsychBERT2 - in the code choose the right datasets for it 
-6. For BERT, PsychBERT1 and PsychBERT2 extract embeddings with  
-7. FirstClassification.ipynb
+6. For SMHD and RSDD datasets there is an addictional script to extract csv the data from a specific format: SMHD_preprocess.py
+7. For BERT, PsychBERT1 and PsychBERT2 extract embeddings with Embeddings.ipynb ana save them in the repository. The Embeddings.ipynb as well preprocesses a bit all of the datasets
+8. Run FirstClassification.ipynb to run test a performance each of the classification model on the top of each embedding.
 
-8.
-9.
+9. 
 10
 
 ## Requirements
