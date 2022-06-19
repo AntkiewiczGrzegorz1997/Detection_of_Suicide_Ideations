@@ -1,23 +1,24 @@
 # MasterthesisBERT
 
-The project is conducted in 2 environments: local machine and Google Colab Pro+. The following scripts are run in the local machine: main.py, scraping.py,
-data_loader.py, preprocess_data.py, SMHD_preprocess.py and finetune_mental_health.py 
+The project is conducted in 2 different environments: local machine and Google Colab Pro+. The following scripts are run in the local machine: main.py, scraping.py, data_loader.py, preprocess_data.py, SMHD_preprocess.py and finetune_mental_health.py 
 
-The following order of running the scripts so that the project can be repeated is as follows:
+So that the project could be reproduced the order of running the scripts should be kept as follows:
 
-1. Gather the data - run the scraping.py from the main.py for getting the data that will be used to train PsychBERTModel. The scraper saves the scraped content of each subreddit into a separate file. Big part of the Data is also obtained from Google Big Query and can be later as well preprocessed by the script. 
+1. Gather the data - run the scraping.py from the main.py for getting the data that will be used to train PsychBERTModel. The scraper saves the scraped content of each subreddit into a separate file. Personal credentials for running Pushlift's API are needed as well. Big part of the Data is also obtained from Google Big Query and can be later preprocessed by the script. 
 2. Merge the Data - the main.py runs the data_loader.py script. We should run it twice: once for our scraped data and the second time for the data from Google Big Query. 
 3. Preprocess the files - from main.py run the preprocess_data.py file that preprocesses the text and outputs a .txt file. Because of the RAM constraints it has to be done probably few times, each time on a different part of the dataset resulting in the end in few preprocessed files. 
 
-4. With the help of Preprocess_Dataset_Right.ipynb preprocess .txt files into their final correct format that can be later used for pre-training BERT
+4. With the help of Preprocess_Dataset_Right.ipynb preprocess .txt files into their final correct format that can be later used for pre-training BERT.
 
 5. Run BERT_Pre-Training.ipynb twice: for PsychBERT1 and PsychBERT2 - in the code choose the right datasets for it 
-6. For SMHD and RSDD datasets there is an addictional script to extract csv the data from a specific format: SMHD_preprocess.py
-7. For BERT, PsychBERT1 and PsychBERT2 extract embeddings with Embeddings.ipynb ana save them in the repository. The Embeddings.ipynb as well preprocesses a bit all of the datasets
-8. Run FirstClassification.ipynb to run test a performance each of the classification model on the top of each embedding.
+6. For SMHD and RSDD datasets there is an addictional script to extract csv data from a specific format: SMHD_preprocess.py
+7. For BERT, PsychBERT1 and PsychBERT2 extract embeddings with Embeddings.ipynb and save them in the repository. The Embeddings.ipynb as well preprocesses a bit all of the datasets
+8. Run finetune_mental_health.py for each dataset. (the finetuned-BERT is needed for later)
+9. Run FirstClassification.ipynb to run test a performance each of the classification model on the top of each embedding.
 
-9. 
-10
+10. To detect the novelty data points run the NoveltyDetection.ipynb script which outputs the list with novelty indices which are going to be excluded later. 
+11. To run the classification without the rows classified as novelty run FirstClassification.ipynb with setting "novelty_detection" to True and run de models as in the step 9. 
+12. 
 
 ## Requirements
 
