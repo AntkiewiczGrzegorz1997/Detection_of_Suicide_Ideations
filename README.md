@@ -41,10 +41,9 @@ For the purpose of providing a dataset for simulation, the dataset_simulation.cs
 
 Because the RAM constraints of the normal Google Colab most of the ipynb notebooks will be run in Google Colab Pro+ which offers up to 50GB of RAM. 
 
-The following packages requirements are only applicable to the codes that are run in python locally, not in Google Colab. 
+The following packages requirements are only applicable to the codes that are run in python locally (python==3.8), not in Google Colab. 
 
 
-The version of python that is required to run the code locally is python==3.8.
 ```bash
 aiohttp==3.8.1
 aiosignal==1.2.0
