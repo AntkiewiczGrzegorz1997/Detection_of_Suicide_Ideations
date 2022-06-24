@@ -8,19 +8,19 @@ Supervisor: Prof. Dr. Stefan Lessmann
 
 Date: 28.06.2022
 
-## Setup
+## Usage
 
 The project is conducted in 2 different environments: local machine and Google Colab Pro+. The following scripts are run in the local machine: main.py, scraping.py, data_loader.py, preprocess_data.py, SMHD_preprocess.py and finetune_mental_health.py 
 
 So that the project could be reproduced the order of running the scripts should be kept as follows:
 
-1. Gather the data - run the scraping.py from the main.py for getting the data that will be used to train PsychBERTModel. The scraper saves the scraped content of each subreddit into a separate file. Personal credentials for running Pushlift's API are needed as well. Big part of the Data is also obtained from Google Big Query and can be later preprocessed by the script. 
-2. Merge the Data - the main.py runs the data_loader.py script. We should run it twice: once for our scraped data and the second time for the data from Google Big Query. 
+1. To gather the data - run the scraping.py from the main.py for getting the data that will be used to train PsychBERTModel. The scraper saves the scraped content of each subreddit into a separate file. Personal credentials for running Pushlift's API are needed as well. Big part of the Data is also obtained from Google Big Query and can be later preprocessed by the script. 
+2. Merge the Data - the main.py runs the data_loader.py script. It should be run twice: once for our scraped data and the second time for the data from Google Big Query. 
 3. Preprocess the files - from main.py run the preprocess_data.py file that preprocesses the text and outputs a .txt file. Because of the RAM constraints it has to be done probably few times, each time on a different part of the dataset resulting in the end in few preprocessed files. 
 
 4. With the help of Preprocess_Dataset_Right.ipynb preprocess .txt files into their final correct format that can be later used for pre-training BERT.
 
-5. Run BERT_Pre-Training.ipynb twice: for PsychBERT1 and PsychBERT2 - in the code choose the right datasets for it 
+5. Run BERT_Pre-Training.ipynb twice: for PsychBERT1 and PsychBERT2. In the script the right datasets should be chosen.
 6. For SMHD and RSDD datasets there is an addictional script to extract csv data from a specific format: SMHD_preprocess.py
 7. For BERT, PsychBERT1 and PsychBERT2 extract embeddings with Embeddings.ipynb and save them in the repository. The Embeddings.ipynb as well preprocesses a bit all of the datasets
 8. Run finetune_mental_health.py for each dataset. (the finetuned-BERT is needed for later)
@@ -28,15 +28,22 @@ So that the project could be reproduced the order of running the scripts should 
 
 10. To detect the novelty data points run the NoveltyDetection.ipynb script which outputs the list with novelty indices which are going to be excluded later. 
 11. To run the classification without the rows classified as novelty run FirstClassification.ipynb with setting "novelty_detection" to True and run de models as in the step 9. 
-12. 
+
+## Data availability 
+
+For the access to the Data scraped from Reddit and used for pre-training PsychBERT please contact Grzegorz Antkiewicz (gantkiewicz97@gmail.com)
+The SMHD, RSDD datasets used in the study are highly confidential and cannot be shared. The Aladag Dataset can by acquiered by contacting the dataset owner: emre.aladag@boun.edu.tr. The RCSD dataset can be downloaded at https://zenodo.org/record/2667859#.YrXLZuxBxhE. 
+
 
 ## Requirements
 
 Because the RAM constraints of the normal Google Colab most of the ipynb notebooks will be run in Google Colab Pro+ which offers up to 50GB of RAM. 
 
-The following packages requirements are only applicable to the codes that are run in python, not Google Colab. 
+The following packages requirements are only applicable to the codes that are run in python locally, not in Google Colab. 
 
-python==3.8
+
+
+The version of python that is required to run the code locally is python==3.8.
 ```bash
 aiohttp==3.8.1
 aiosignal==1.2.0
