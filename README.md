@@ -31,7 +31,7 @@ So that the project could be reproduced the order of running the scripts should 
 
 ## Data availability 
 
-For the access to the Data scraped from Reddit and used for pre-training PsychBERT please contact Grzegorz Antkiewicz (gantkiewicz97@gmail.com).
+For the access to the data scraped from Reddit and used for pre-training PsychBERT please contact Grzegorz Antkiewicz (gantkiewicz97@gmail.com).
 The SMHD, RSDD datasets used in the study are highly confidential and cannot be shared. The Aladag Dataset can by acquiered by contacting the author of the paper https://www.jmir.org/2018/6/e215/.  The RCSD dataset can be downloaded at https://zenodo.org/record/2667859#.YrXLZuxBxhE. 
 
 For the purpose of providing a dataset for simulation, the dataset_simulation.csv is created. 
