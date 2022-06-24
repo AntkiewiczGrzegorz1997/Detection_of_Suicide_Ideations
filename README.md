@@ -9,7 +9,7 @@ Supervisor: Prof. Dr. Stefan Lessmann
 
 Date: 28.06.2022
 
-##Setup
+## Setup
 
 The project is conducted in 2 different environments: local machine and Google Colab Pro+. The following scripts are run in the local machine: main.py, scraping.py, data_loader.py, preprocess_data.py, SMHD_preprocess.py and finetune_mental_health.py 
 
