@@ -31,8 +31,10 @@ So that the project could be reproduced the order of running the scripts should 
 
 ## Data availability 
 
-For the access to the Data scraped from Reddit and used for pre-training PsychBERT please contact Grzegorz Antkiewicz (gantkiewicz97@gmail.com)
-The SMHD, RSDD datasets used in the study are highly confidential and cannot be shared. The Aladag Dataset can by acquiered by contacting the dataset owner: emre.aladag@boun.edu.tr. The RCSD dataset can be downloaded at https://zenodo.org/record/2667859#.YrXLZuxBxhE. 
+For the access to the Data scraped from Reddit and used for pre-training PsychBERT please contact Grzegorz Antkiewicz (gantkiewicz97@gmail.com).
+The SMHD, RSDD datasets used in the study are highly confidential and cannot be shared. The Aladag Dataset can by acquiered by contacting the author of the paper https://www.jmir.org/2018/6/e215/.  The RCSD dataset can be downloaded at https://zenodo.org/record/2667859#.YrXLZuxBxhE. 
+
+For the purpose of providing a dataset for simulation, the dataset_simulation.csv is created. 
 
 
 ## Requirements
@@ -40,7 +42,6 @@ The SMHD, RSDD datasets used in the study are highly confidential and cannot be 
 Because the RAM constraints of the normal Google Colab most of the ipynb notebooks will be run in Google Colab Pro+ which offers up to 50GB of RAM. 
 
 The following packages requirements are only applicable to the codes that are run in python locally, not in Google Colab. 
-
 
 
 The version of python that is required to run the code locally is python==3.8.
