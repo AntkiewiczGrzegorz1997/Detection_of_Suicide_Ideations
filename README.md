@@ -1,5 +1,4 @@
-# Detection of Suicide Ideation on Online Forums Using Deep Learning and PsychBERT: A Pre-trained Language Model for
-Mental Health-related Online Posts
+# Detection of Suicide Ideation on Online Forums Using Deep Learning and PsychBERT: A Pre-trained Language Model for Mental Health-related Online Posts
 
 Master's Thesis
 
