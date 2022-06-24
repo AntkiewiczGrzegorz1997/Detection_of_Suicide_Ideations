@@ -14,7 +14,7 @@ The project is conducted in 2 different environments: local machine and Google C
 
 So that the project could be reproduced the order of running the scripts should be kept as follows:
 
-1. To gather the data - run the scraping.py from the main.py for getting the data that will be used to train PsychBERTModel. The scraper saves the scraped content of each subreddit into a separate file. Personal credentials for running Pushlift's API are needed as well. Big part of the Data is also obtained from Google Big Query and can be later preprocessed by the script. 
+1. To gather the data - run the scraping.py from the main.py for getting the data that will be used to train PsychBERTModel. The scraper saves the scraped content of each subreddit into a separate file. Personal credentials for running Pushlift's API are needed as well. Big part of the Data is also obtained from Google Big Query and can be later preprocessed by the script.
 2. Merge the Data - the main.py runs the data_loader.py script. It should be run twice: once for our scraped data and the second time for the data from Google Big Query. 
 3. Preprocess the files - from main.py run the preprocess_data.py file that preprocesses the text and outputs a .txt file. Because of the RAM constraints it has to be done probably few times, each time on a different part of the dataset resulting in the end in few preprocessed files. 
 
