@@ -1,4 +1,15 @@
-# MasterthesisBERT
+# Detection of Suicide Ideation on Online Forums Using Deep Learning and PsychBERT: A Pre-trained Language Model for
+Mental Health-related Online Posts
+
+Master's Thesis
+
+Author: Grzegorz Antkiewicz
+
+Supervisor: Prof. Dr. Stefan Lessmann
+
+Date: 28.06.2022
+
+##Setup
 
 The project is conducted in 2 different environments: local machine and Google Colab Pro+. The following scripts are run in the local machine: main.py, scraping.py, data_loader.py, preprocess_data.py, SMHD_preprocess.py and finetune_mental_health.py 
 
