@@ -21,9 +21,9 @@ So that the project could be reproduced the order of running the scripts should 
 4. With the help of Preprocess_Dataset_Right.ipynb preprocess .txt files into their final correct format that can be later used for pre-training BERT.
 
 5. Run BERT_Pre-Training.ipynb twice: for PsychBERT1 and PsychBERT2. In the script the right datasets should be chosen.
-6. For SMHD and RSDD datasets there is an addictional script to extract csv data from a specific format: SMHD_preprocess.py
-7. For BERT, PsychBERT1 and PsychBERT2 extract embeddings with Embeddings.ipynb and save them in the repository. The Embeddings.ipynb as well preprocesses a bit all of the datasets
-8. Run finetune_mental_health.py for each dataset. (the finetuned-BERT is needed for later)
+6. For SMHD and RSDD datasets there is an addictional script to extract csv data from a specific format: SMHD_preprocess.py.
+7. For BERT, PsychBERT1 and PsychBERT2 extract embeddings with Embeddings.ipynb and save them in the repository. The Embeddings.ipynb as well preprocesses a bit all of the datasets.
+8. Run finetune_mental_health.py for each dataset. (the finetuned-BERT is needed for later).
 9. Run FirstClassification.ipynb to run test a performance each of the classification model on the top of each embedding.
 
 10. To detect the novelty data points run the NoveltyDetection.ipynb script which outputs the list with novelty indices which are going to be excluded later. 
