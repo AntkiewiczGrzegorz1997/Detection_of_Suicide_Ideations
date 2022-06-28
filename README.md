@@ -16,8 +16,8 @@ Date: 28.06.2022
 - [Working with the repo](#Working-with-the-repo)
     - [Usage](#Usage)
     - [Requirements](#Requirements)
-- [Reproducing results](#Reproducing results)
-    - [Data and Model availability](#Data and Model availability)
+- [Reproducing results](#Reproducing-results)
+    - [Data and Model availability](#Data-and-Model-availability)
     - [Results](#Results)
 
 ## Summary
