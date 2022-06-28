@@ -44,16 +44,16 @@ So that the project could be reproduced the order of running the scripts should 
 5. Run BERT_Pre-Training.ipynb twice: for PsychBERT1 and PsychBERT2. In the script the right datasets should be chosen.
 6. For SMHD and RSDD datasets there is an addictional script to extract csv data from a specific format: SMHD_preprocess.py.
 7. For BERT, PsychBERT1 and PsychBERT2 extract embeddings with Embeddings.ipynb and save them in the repository. The Embeddings.ipynb as well preprocesses a bit all of the datasets.
-8. Run finetune_mental_health.py for each dataset. (the finetuned-BERT is needed for later).
-9. Run FirstClassification.ipynb to run test a performance each of the classification model on the top of each embedding.
+8. Run finetune_mental_health.py for each dataset (the finetuned-BERT is needed for later).
+9. Run FirstClassification.ipynb to test a performance each of the classification model on the top of each embedding.
 
-10. To detect the novelty data points run the NoveltyDetection.ipynb script which outputs the list with novelty indices which are going to be excluded later. 
+10. To detect the novel data points, run the NoveltyDetection.ipynb script which outputs the list with novelty indices which are going to be excluded later. 
 11. To run the classification without the rows classified as novelty run FirstClassification.ipynb with setting "novelty_detection" to True and run de models as in the step 9. 
 
 
 ### Requirements
 
-Because the RAM constraints of the normal Google Colab most of the ipynb notebooks will be run in Google Colab Pro+ which offers up to 50GB of RAM. 
+Because the RAM constraints of the normal Google Colab most of the ipynb notebooks will have to be run in Google Colab Pro+ which offers up to 50GB of RAM.
 
 The following packages requirements are only applicable to the codes that are run in python locally (python==3.8), not in Google Colab. 
 
