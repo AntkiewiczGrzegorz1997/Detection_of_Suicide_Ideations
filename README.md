@@ -4,11 +4,19 @@ Master's Thesis
 
 Author: Grzegorz Antkiewicz
 
-Supervisor: Prof. Dr. Stefan Lessmann
+1st Examiner: Prof. Dr. Stefan Lessmann
+
+2nd Examiner: Prof. Dr. Benjamin Fabian
 
 Date: 28.06.2022
 
-## Usage
+## Table of Content 
+
+## Summary
+
+## Working with repo
+
+### Usage
 
 The project is conducted in 2 different environments: local machine and Google Colab Pro+. The following scripts are run in the local machine: main.py, scraping.py, data_loader.py, preprocess_data.py, SMHD_RSDD_preprocess.py and finetune_mental_health.py 
 
@@ -29,7 +37,7 @@ So that the project could be reproduced the order of running the scripts should 
 10. To detect the novelty data points run the NoveltyDetection.ipynb script which outputs the list with novelty indices which are going to be excluded later. 
 11. To run the classification without the rows classified as novelty run FirstClassification.ipynb with setting "novelty_detection" to True and run de models as in the step 9. 
 
-## Data and Model availability 
+### Data and Model availability 
 
 The pre-trained PsychBERTs, fine-tuned BERT models as well as scraped data from Reddit is availabe in the following folder: https://drive.google.com/drive/folders/1Ud55BPRwAQDe8wdsFezv8E9zM-QJsrtJ?usp=sharing
 
@@ -37,8 +45,12 @@ The SMHD, RSDD datasets used in the study are highly confidential and cannot be 
 
 For the purpose of providing a dataset for simulating the classification, the dataset_simulation.csv is created.
 
+### Results
 
-## Requirements
+
+
+
+### Requirements
 
 Because the RAM constraints of the normal Google Colab most of the ipynb notebooks will be run in Google Colab Pro+ which offers up to 50GB of RAM. 
 
