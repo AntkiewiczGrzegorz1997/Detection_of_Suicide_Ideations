@@ -29,9 +29,10 @@ So that the project could be reproduced the order of running the scripts should 
 10. To detect the novelty data points run the NoveltyDetection.ipynb script which outputs the list with novelty indices which are going to be excluded later. 
 11. To run the classification without the rows classified as novelty run FirstClassification.ipynb with setting "novelty_detection" to True and run de models as in the step 9. 
 
-## Data availability 
+## Data and Model availability 
 
-For the access to the data scraped from Reddit and used for pre-training PsychBERT please contact Grzegorz Antkiewicz (gantkiewicz97@gmail.com).
+The pre-trained PsychBERTs, fine-tuned BERT models as well as scraped data from Reddit is availabe in the following folder: https://drive.google.com/drive/folders/1Ud55BPRwAQDe8wdsFezv8E9zM-QJsrtJ?usp=sharing
+
 The SMHD, RSDD datasets used in the study are highly confidential and cannot be shared. The Aladag Dataset can by acquiered by contacting the author of the paper https://www.jmir.org/2018/6/e215/.  The RCSD dataset can be downloaded at https://zenodo.org/record/2667859#.YrXLZuxBxhE. 
 
 For the purpose of providing a dataset for simulating the classification, the dataset_simulation.csv is created.
