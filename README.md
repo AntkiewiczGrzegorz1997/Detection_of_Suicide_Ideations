@@ -31,7 +31,7 @@ Hence, in this work, we first thoroughly describe the existing deep-learning app
 
 ### Usage
 
-The project is conducted in 2 different environments: local machine and Google Colab Pro+. The following scripts are run in the local machine: `main.py`, `scraping.py`, `data_loader.py`, `preprocess_data.py`, `SMHD_RSDD_preprocess.py` and `finetune_mental_health.py`
+The project is conducted in 2 different environments: local machine and Google Colab Pro+. The following scripts are run in the local machine: `main.py`, `scraping.py`, `data_loader.py`, `preprocess_data.py`, `SMHD_RSDD_preprocess.py` and `finetune_mental_health.py`. All scripts are available in the `codes` folder. 
 
 So that the project could be reproduced the order of running the scripts should be kept as follows:
 
