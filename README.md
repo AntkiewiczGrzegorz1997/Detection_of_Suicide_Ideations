@@ -181,7 +181,7 @@ zipp==3.8.0
 
 ### Data and Model availability 
 
-The pre-trained PsychBERTs, fine-tuned BERT models as well as scraped data from Reddit is availabe in the following folder: https://drive.google.com/drive/folders/1Ud55BPRwAQDe8wdsFezv8E9zM-QJsrtJ?usp=sharing
+To obtain the access to the pre-trained PsychBERTs, fine-tuned BERT models as well as scraped data from Reddit contact antkiewg@hu-berlin.de
 
 The SMHD, RSDD datasets used in the study are highly confidential and cannot be shared. The Aladag Dataset can by acquiered by contacting the author of the paper https://www.jmir.org/2018/6/e215/.  The RCSD dataset can be downloaded at https://zenodo.org/record/2667859#.YrXLZuxBxhE. 
 
