@@ -14,6 +14,15 @@ Date: 28.06.2022
 
 ## Summary
 
+- [Summary](#summary)
+- [Working with the repo](#Working-with-the-repo)
+    - [Usage](#Usage)
+    - [Requirements](#Requirements)
+
+- [Reproducing results](#Reproducing results)
+    - [Data and Model availability](#Data and Model availability)
+    - [Requirements](#Requirements)
+
 ## Working with repo
 
 ### Usage
@@ -36,18 +45,6 @@ So that the project could be reproduced the order of running the scripts should 
 
 10. To detect the novelty data points run the NoveltyDetection.ipynb script which outputs the list with novelty indices which are going to be excluded later. 
 11. To run the classification without the rows classified as novelty run FirstClassification.ipynb with setting "novelty_detection" to True and run de models as in the step 9. 
-
-### Data and Model availability 
-
-The pre-trained PsychBERTs, fine-tuned BERT models as well as scraped data from Reddit is availabe in the following folder: https://drive.google.com/drive/folders/1Ud55BPRwAQDe8wdsFezv8E9zM-QJsrtJ?usp=sharing
-
-The SMHD, RSDD datasets used in the study are highly confidential and cannot be shared. The Aladag Dataset can by acquiered by contacting the author of the paper https://www.jmir.org/2018/6/e215/.  The RCSD dataset can be downloaded at https://zenodo.org/record/2667859#.YrXLZuxBxhE. 
-
-For the purpose of providing a dataset for simulating the classification, the dataset_simulation.csv is created.
-
-### Results
-
-
 
 
 ### Requirements
@@ -178,3 +175,18 @@ xxhash==2.0.2
 yarl==1.7.2
 zipp==3.8.0
 ```
+
+
+## Reproducing results
+
+### Data and Model availability 
+
+The pre-trained PsychBERTs, fine-tuned BERT models as well as scraped data from Reddit is availabe in the following folder: https://drive.google.com/drive/folders/1Ud55BPRwAQDe8wdsFezv8E9zM-QJsrtJ?usp=sharing
+
+The SMHD, RSDD datasets used in the study are highly confidential and cannot be shared. The Aladag Dataset can by acquiered by contacting the author of the paper https://www.jmir.org/2018/6/e215/.  The RCSD dataset can be downloaded at https://zenodo.org/record/2667859#.YrXLZuxBxhE. 
+
+For the purpose of providing a dataset for simulating the classification, the dataset_simulation.csv is created.
+
+### Results
+
+The results for each experiment are available in the Results folder.
