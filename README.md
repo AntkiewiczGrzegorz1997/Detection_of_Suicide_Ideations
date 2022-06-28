@@ -189,8 +189,8 @@ To obtain the access to the pre-trained PsychBERTs, fine-tuned BERT models as we
 
 The SMHD, RSDD datasets used in the study are highly confidential and cannot be shared. The Aladag Dataset can by acquiered by contacting the author of the paper https://www.jmir.org/2018/6/e215/.  The RCSD dataset can be downloaded at https://zenodo.org/record/2667859#.YrXLZuxBxhE. 
 
-For the purpose of providing a dataset for simulating the classification, the dataset_simulation.csv is created.
+For the purpose of providing a dataset for simulating the classification, the `dataset_simulation.csv` is created and available in the `additional_files`.
 
 ### Results
 
-The results for each experiment are available in the Results folder.
+The results for each experiment are available in the `Results` folder.
