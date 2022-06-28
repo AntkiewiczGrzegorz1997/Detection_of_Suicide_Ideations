@@ -12,7 +12,7 @@ Date: 28.06.2022
 
 ## Table of Content 
 
-## Summary
+
 
 - [Summary](#summary)
 - [Working with the repo](#Working-with-the-repo)
@@ -22,6 +22,13 @@ Date: 28.06.2022
 - [Reproducing results](#Reproducing results)
     - [Data and Model availability](#Data and Model availability)
     - [Requirements](#Requirements)
+
+## Summary
+
+Suicide is a critical issue in today's society. Many at-risk individuals tend to share their opinions and thoughts through various online social media platforms which have become a crucial place for 
+early detection and prevention of suicide attempts.
+Extracting information from suicidal online posts using existing language representation models does not always lead to good results. 
+Hence, in this work, we first thoroughly describe the existing deep-learning approaches for suicide ideation detection and later introduce two PsychBERT models, which are domain-specific language representation models, pre-trained on millions of Reddit posts and comments. Moreover, to further research improving the performance of the classifiers we apply an unsupervised novelty detection technique, as well as extract additional features from text with the help of deep-learning models. The results of our experiment suggest a consistent and good relative performance of techniques based on PsychBERT embeddings on suicide ideation detection datasets. Additionally, our findings suggest that the relative performance of an unsupervised novelty detection technique improves the results in only one out of two datasets leaving room for further research on this topic. Our results also indicate that extracting additional features from text with the help of deep-learning models does not lead to improved performance.
 
 ## Working with repo
 
