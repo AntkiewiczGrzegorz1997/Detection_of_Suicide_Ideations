@@ -12,8 +12,6 @@ Date: 28.06.2022
 
 ## Table of Content 
 
-
-
 - [Summary](#summary)
 - [Working with the repo](#Working-with-the-repo)
     - [Usage](#Usage)
